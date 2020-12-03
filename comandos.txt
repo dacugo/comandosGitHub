@@ -1,0 +1,49 @@
+//configuración del usuario
+git config --global user.name NombreUsuario
+
+//configuración del usuario en GitHub
+git config --global user.email email
+
+//configuración de la contraseña en GitHub
+git config --global user.password contraseña
+
+//comandos para moverse entre carpetas
+cd nombreCarpeta //avanza
+cd .. //atrás
+
+//inicializar el git
+git init //se utiliza dentro de la carpetas
+
+//ver todos los archivos, incluidos los ocultos
+ls -al
+
+//crear un archivo
+touch ejemplo.html
+
+//añadir documentos al commit
+git add nombreArchivo.html //para archivos individuales
+git add . //todos aquellos archivos con modificaciones
+
+//ver el estado actual de los archivos
+git status
+
+//agregar un comentario a un conjunto de cambios
+git commit -m "Ejemplo de comentario"
+
+//conectar con un repositorio en GitHub
+git remote add nombreRepositorioLocal urldelRepositorio//https://github.com
+
+//crear una nueva rama en el repositorio de GitHub
+git push -u nombreRepositorioLocal "master"NombreRamaNuevaGitHub
+
+//saber en que rama se esta trabajando
+git branch
+
+//crear una nueva rama local a partir de la que esta activa y empezar a trabajar en la nueva
+git checkout -b "nombreNuevaRamaLocal"
+
+//moverse a una rama local
+git checkout
+
+//sincronizar las modificaciones aceptados
+git push
